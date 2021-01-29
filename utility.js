@@ -1,8 +1,8 @@
 class Utility{
-     firstName(fname) {
-        let FIRST_NAME_PATTERN = new RegExp("^[A-Z]{1}[a-z]{2,}$");
+     firstName=(firstName)=> {
+        let FIRST_NAME_PATTERN = /^[A-Z]{1}[a-z]{2,}$/
 
-        if (FIRST_NAME_PATTERN.test(fname)) {
+        if (firstName.match(FIRST_NAME_PATTERN)) {
             console.log("valid First Name");
         }
         else {
