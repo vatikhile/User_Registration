@@ -23,5 +23,19 @@ class Utility {
         return EMAIL_PATTERN;
 
     }
+    mobile=(number)=>{
+        let PHONE_NUMBER_PATTERN = /^([0-9]{2}[ ]+)?[0-9]{10}$/;
+
+        if (number.match(PHONE_NUMBER_PATTERN)) {
+            console.log(`valid Phone Number${number}`);
+        }
+        else {
+            console.log(`Invalid Phone Number${number}`);
+        }
+        return PHONE_NUMBER_PATTERN;
+
+    }
 }
 module.exports = new Utility();
+
+
