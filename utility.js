@@ -1,12 +1,12 @@
 class Utility{
-     firstName=(firstName)=> {
+     name=(firstName)=> {
         let FIRST_NAME_PATTERN = /^[A-Z]{1}[a-z]{2,}$/
 
         if (firstName.match(FIRST_NAME_PATTERN)) {
-            console.log("valid First Name");
+            console.log(`valid ${firstName} Name`);
         }
         else {
-            console.log("Invalid First Name");
+            console.log(`Invalid ${firstName} Name`);
         }
         return FIRST_NAME_PATTERN;
        
